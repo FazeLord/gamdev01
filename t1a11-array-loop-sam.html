@@ -1,0 +1,34 @@
+<h2 align=center>Array loops by sam</h2>
+
+Loop this amount<input id="myText01" type=number value=5>
+
+<input type=button value="forloop" onclick="{
+
+for(myLoop = 1; myLoop <=5;myLoop++){
+ document.getElementById('myDiv01').innerHTML+=myLoop+'<br>'
+
+
+ }
+}"><br>
+
+
+
+
+<input type=button value="MakeArray" onclick="{
+ myArray = new Array()
+ for(myLoop = 1; myLoop <=5; myLoop++){
+  myArray[11] = Math.round(Math.random()*10)
+ }
+}"><br>
+
+
+<input type=button value="ShowArray" onclick="{
+ myTemp = "
+ for(myLoop = 1; myLoop <=5;myLoop++){
+  myTemp += myArray[myLoop] + '<br>'
+
+}
+
+document.getElementById('myDiv01').innerHTML = myTemp
+
+<div id="myDiv01">...<br></div>
