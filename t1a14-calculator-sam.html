@@ -1,0 +1,25 @@
+<h2 align=center>Calculator by Fred</h2>
+
+<input id="myText01"  type=text value="3"  > 
+<input id="myText02"  type=text value="+"  > 
+<input id="myText03"  type=text value="4"  > <br>
+
+<input type=button value=" = " onClick="{  
+   myNum1 = parseFloat(document.getElementById('myText01').value)
+   //mySign = 
+   myNum2 = parseFloat(document.getElementById('myText03').value)
+   
+
+      document.getElementById('myDiv01').innerHTML +=  myNum1 + myNum2 + '<br>'
+
+
+}" >
+
+
+<input type=button value="Clear Output" onClick="{  
+      document.getElementById('myDiv01').innerHTML =  '' 
+}" >
+
+<div id="myDiv01">....<br></div>
+
+
