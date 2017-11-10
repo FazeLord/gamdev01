@@ -1,4 +1,4 @@
-<h2 align=center>Calculator by Fred</h2>
+<h2 align=center>Calculator by Sam </h2>
 
 <input id="myText01"  type=text value="3"  > 
 <input id="myText02"  type=text value="+"  > 
@@ -6,20 +6,179 @@
 
 <input type=button value=" = " onClick="{  
    myNum1 = parseFloat(document.getElementById('myText01').value)
-   //mySign = 
+   mySign = document.getElementById('myText02').value
    myNum2 = parseFloat(document.getElementById('myText03').value)
+ 
+    myTotal = 0
+
+    if (mySign == '+'){
+      myTotal = myNum1 + myNum2
+   }
    
+   if (mySign == '-'){
+      myTotal = myNum1 - myNum2
 
-      document.getElementById('myDiv01').innerHTML +=  myNum1 + myNum2 + '<br>'
+       }
+
+ if (mySign == '*'){
+      myTotal = myNum1 * myNum2
+       }
+
+
+ if (mySign == '/'){
+      myTotal = myNum1 / myNum2
+       }
+
+
+
+
+
+
+
+
+
+      document.getElementById('myDiv01').innerHTML =  
+                    myNum1 + mySign + myNum2 + '=' + myTotal + '<br>' +
+                    document.getElementById('myDiv01').innerHTML
 
 
 }" >
 
 
-<input type=button value="Clear Output" onClick="{  
-      document.getElementById('myDiv01').innerHTML =  '' 
+<input type=button value="Clear All" onClick="{  
+    document.getElementById('myText01').value =  '' 
+    document.getElementById('myText02').value =  '' 
+    document.getElementById('myText03').value =  '' 
+    document.getElementById('myDiv01').innerHTML =  '' 
 }" >
 
-<div id="myDiv01">....<br></div>
+<div id="myDiv01"><br></div>
 
+
+
+
+<table>
+<input type=button value=" 1 " onClick="{ 
+document.getElementById('myText01').value +=  1 
+}">
+
+
+<input type=button value=" 2 " onClick="{ 
+document.getElementById('myText01').value +=  2 
+}">
+
+<input type=button value=" 3 " onClick="{ 
+document.getElementById('myText01').value +=  3 
+}">
+<br></br>
+<input type=button value=" 4 " onClick="{ 
+document.getElementById('myText01').value +=  4 
+}">
+
+
+<input type=button value=" 5 " onClick="{ 
+document.getElementById('myText01').value +=  5 
+}">
+
+
+<input type=button value=" 6 " onClick="{ 
+document.getElementById('myText01').value +=  6 
+}">
+<br></br>
+
+<input type=button value=" 7 " onClick="{ 
+document.getElementById('myText01').value +=  7 
+}">
+
+
+<input type=button value=" 8 " onClick="{ 
+document.getElementById('myText01').value +=  8 
+}">
+
+
+<input type=button value=" 9 " onClick="{ 
+document.getElementById('myText01').value +=  9 
+}">
+<br></br>
+
+<input type=button value=" 0 " onClick="{ 
+document.getElementById('myText01').value +=  0 
+}">
+<br></br>
+
+<input type=button value=" '.' " onClick="{ 
+document.getElementById('myText01').value +=  '.' 
+}">
+
+
+
+
+
+<input type=button value=" '+' " onClick="{ 
+document.getElementById('myText02').value +=  '+' 
+}">
+
+
+
+
+
+
+
+
+
+
+
+<input type=button value=" 1 " onClick="{ 
+document.getElementById('myText03').value +=  1 
+}">
+
+
+<input type=button value=" 2 " onClick="{ 
+document.getElementById('myText03').value +=  2 
+}">
+
+<input type=button value=" 3 " onClick="{ 
+document.getElementById('myText03').value +=  3 
+}">
+
+<input type=button value=" 4 " onClick="{ 
+document.getElementById('myText03').value +=  4 
+}">
+
+
+<input type=button value=" 5 " onClick="{ 
+document.getElementById('myText03').value +=  5 
+}">
+
+
+<input type=button value=" 6 " onClick="{ 
+document.getElementById('myText03').value +=  6 
+}">
+
+
+<input type=button value=" 7 " onClick="{ 
+document.getElementById('myText03').value +=  7 
+}">
+
+
+<input type=button value=" 8 " onClick="{ 
+document.getElementById('myText03').value +=  8 
+}">
+
+
+<input type=button value=" 9 " onClick="{ 
+document.getElementById('myText03').value +=  9 
+}">
+
+
+<input type=button value=" 0 " onClick="{ 
+document.getElementById('myText03').value +=  0 
+}">
+
+
+<input type=button value=" '.' " onClick="{ 
+document.getElementById('myText03').value +=  '.' 
+}">
+
+</table>
 
