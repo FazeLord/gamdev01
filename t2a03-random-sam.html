@@ -1,0 +1,21 @@
+<input type=button value="Random GO" onclick="{
+  myX = 0
+  myY = 0
+  myCounter1 = setInterval(function(){
+    myX = Math.floor(Math.random() * 6 -3)
+    myY = Math.floor(Math.random() * 6 -3)
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + myX +'px'
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + myX +'px'
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + myX +'px'
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + myX +'px'
+
+
+
+ if(parseInt(document.getElementById('myImage01').style.left) <=0){document.getElementById('myImage01').style.left = '20px'}
+ if(parseInt(document.getElementById('myImage01').style.top) <=0){document.getElementById('myImage01').style.top = '20px'}
+
+
+},30); 
+
+}">
+<img id="myImage01" src="getter.jpg" style="position :absolute;top:0;left:10;width:30;height:40;">
