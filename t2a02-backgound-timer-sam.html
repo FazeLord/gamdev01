@@ -18,8 +18,63 @@
    alert('Background stopped at position ' +document.getElementById('myBody').style.backgroundPosition)
 
 }">
-</body>
 
+
+
+
+
+
+
+
+<body  onkeydown="{
+ 
+
+
+
+
+ if(String.fromCharCode(event.keyCode)== 'D'){
+    document.getElementById('myA').style.left = parseInt(document.getElementById('myA').style.left) + 20 +'px'
+}
+
+
+
+ if(String.fromCharCode(event.keyCode)== 'A'){
+    document.getElementById('myA').style.left = parseInt(document.getElementById('myA').style.left) + -20 +'px'
+
+
+}
+
+
+if(String.fromCharCode(event.keyCode)== 'W'){
+    document.getElementById('myA').style.top = parseInt(document.getElementById('myA').style.top) + -20 +'px'
+
+
+}
+
+
+if(String.fromCharCode(event.keyCode)== 'S'){
+    document.getElementById('myA').style.top = parseInt(document.getElementById('myA').style.top) + 20 +'px'
+
+}
+
+
+}">
+
+
+
+
+
+
+
+
+<img  id="myA"  src="gachi baby.png"  style="position:absolute; width:60px; height:60px; left:30px; top:10px">  
+
+
+
+
+
+
+</body>
 
 
 
