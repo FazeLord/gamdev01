@@ -1,0 +1,27 @@
+<body id="myBody"  style=" background-size: 150px 150px;  background-image: url('Background.png');  ">
+
+<input type=button value="Background Go" onclick="{
+       myX = 0
+       myY = 0
+       myCounter1 = setInterval(function(){   
+             myX += 4;
+             myY += 3;
+             document.getElementById('myBody').style.backgroundPosition = myX + 'px '+ myY+'px';
+
+      }, 30);    // every 30 milliseconds
+
+}">
+
+
+<input type=button value="Background Stop" onclick="{
+   clearInterval( myCounter1)
+   alert('Background stopped at position ' +document.getElementById('myBody').style.backgroundPosition)
+
+}">
+</body>
+
+
+
+
+
+
